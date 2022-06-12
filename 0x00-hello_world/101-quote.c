@@ -1,9 +1,10 @@
 #include <stdio.h>
 #include <unistd.h>
+#include <stdlib.h>
 
 /**
  * main - Entry point
- * * Return:1
+ * Return:1
  */
 int main(void)
 {

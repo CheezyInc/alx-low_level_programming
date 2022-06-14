@@ -10,7 +10,7 @@
 
 int main(void)
 {
-	char low = 'a'
+	char low = 'a';
 	
 	while (low <= 'z')
 	{
@@ -18,7 +18,7 @@ int main(void)
 		low++;
 	}
 
-	char low = 'A'
+	low = 'A';
 	while (low <= 'Z')
 	{
 		putchar(low);

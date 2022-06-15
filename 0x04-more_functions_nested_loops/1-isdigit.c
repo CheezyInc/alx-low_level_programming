@@ -7,16 +7,5 @@
  */
 int _isigit(int c)
 {
-	char i = '0';
-	int isdigit = 0;
-
-	for (; i <= '9'; i++)
-	{
-		if (i == c)
-		{
-			isdigit = 1;
-			break;
-		}
-	}
-	return (isdigit);
+	return (c >= 48 && c <= 57);
 }

@@ -8,12 +8,34 @@
  */
 int main (void)
 {
-	srand((unsigned int)(time(NULL)));
+	int i,j,k,s;
+	char c[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789/,.-+=~`<>:";
+	char p[58];
 
-	int index = 0;
-	char characters[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789/,.-+=~`<>:";
-	for(index = 0; index < 12; index++)
+	srand(time(NULL));
+	while (s != 2772)
 	{
-		printf("%c", characters[rand() % (sizeof characters - 1)]);
+		i = k = s = 0;
+		while ((2772 - 122) > s)
+		{
+			j = rand () % 62;
+			p[i] = c[j];
+			s += c[j];
+			i++;
+		}
+		while (c[k])
+		{
+			if (c[k] == (2772 - s))
+			{
+				p[i] = c[k];
+				s += c[k];
+				i++;
+				break;
+			}
+			k++;
+		}
 	}
+	p[i] = '\0';
+	printf("%s", p);
+	return (0);
 }
